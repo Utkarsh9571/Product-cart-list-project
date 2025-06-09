@@ -36,7 +36,7 @@ function DessertCart ({ item, cartItem, onUpdateGlobalCart }) {
               className="border-white border-2 rounded-full p-1 cursor-pointer"
               disabled={quantity <= 0}
               >
-              <img src="assets\images\icon-decrement-quantity.svg" alt="icon decrement quantity" />
+              <img src="public\assets\images\icon-decrement-quantity.svg" alt="icon decrement quantity" />
             </button>
 
             <span className="text-white text-md">{quantity}</span>
@@ -45,7 +45,7 @@ function DessertCart ({ item, cartItem, onUpdateGlobalCart }) {
               onClick={handleIncreaseQuantity}
               className="border-white border-2 rounded-full p-1 cursor-pointer"
               >
-              <img src="assets\images\icon-increment-quantity.svg" alt="icon increment quantity" />
+              <img src="public\assets\images\icon-increment-quantity.svg" alt="icon increment quantity" />
             </button>
         </div>
       ) : (
@@ -54,7 +54,7 @@ function DessertCart ({ item, cartItem, onUpdateGlobalCart }) {
           className="flex w-1/2 justify-center p-3 pl-7 pr-7 gap-2 border border-rose500 justify-self-center font-medium bg-white rounded-full 
           absolute left-1/2 -translate-x-1/2 -translate-y-1/2 bottom-16 hover:text-projectRed cursor-pointer hover:border-projectRed md:gap-1 md:pl-5 md:pr-5" 
           >
-          <img src="assets\images\icon-add-to-cart.svg" alt="icon add to cart" />
+          <img src="public\assets\images\icon-add-to-cart.svg" alt="icon add to cart" />
           <h1 className="text-sm">Add to Cart</h1>
         </button>
       )}
@@ -134,7 +134,7 @@ export default function App() {
 
       {cartItems.length === 0 ? (
         <>
-          <img src="assets\images\illustration-empty-cart.svg" alt="illustration empty cart" 
+          <img src="public\assets\images\illustration-empty-cart.svg" alt="illustration empty cart" 
             className="mt-12 mb-6"/>
           <h2 className="text-rose500 font-semibold text-md" >
             Your added items will appear hear
@@ -159,7 +159,7 @@ export default function App() {
                   onClick={() => handleUpdateGlobalCart(cartItems, -cartItems.quantity)}
                 >
                   <img 
-                    src="assets\images\icon-remove-item.svg" 
+                    src="public\assets\images\icon-remove-item.svg" 
                     alt="icon remove item" 
                     className="w-full border-rose300 border-2 rounded-full m-0.5 p-0.5
                     hover:border-rose900 cursor-pointer"/>
@@ -174,7 +174,7 @@ export default function App() {
             </div>
 
             <div className="flex justify-center gap-2 bg-rose50 p-4.5 rounded-2xl mt-6 mb-6">
-              <img src="assets\images\icon-carbon-neutral.svg" alt="icon carbon neutral" />
+              <img src="public\assets\images\icon-carbon-neutral.svg" alt="icon carbon neutral" />
               <h1 className="text-sm text-rose900">This is a <span className="font-semibold">carbon-neutral </span>delivery</h1>
             </div>
 
@@ -197,7 +197,7 @@ export default function App() {
             <div>
               <img
                 className="mb-5" 
-                src="assets\images\icon-order-confirmed.svg" 
+                src="public\assets\images\icon-order-confirmed.svg" 
                 alt="icon order confirmed" />
               <h1 className="font-bold text-4xl w-1/2">Order Confirmed</h1>
               <h2 className="font-medium mt-4 mb-4 text-rose400">We hope you enjoy your food!</h2>
